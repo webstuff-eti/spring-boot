@@ -12,7 +12,12 @@ public class TesteController {
 	
 	@GetMapping(value = "/{nome}")
 	public String exemplo(@PathVariable("nome") String nome) {
-		 return "Cris Linda TOP " + nome;
+		 return "Testando " + nome;
+	}
+	
+	@GetMapping(value = "/teste")
+	public String arquitetura() {
+		 return "Testando Verbo GET: SUCESSO!";
 	}
 
 }
